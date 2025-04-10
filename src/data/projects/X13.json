@@ -1,0 +1,129 @@
+{
+	"id": 13,
+	"project_name": "AI Model Fine-Tuning with Data Collection and Evaluation",
+	"description": "The project aimed to fine-tune an AI model through a structured data collection process, followed by evaluation and optimization to improve model performance using custom prompts.",
+	"year": 2024,
+	"month": 6,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "AI Model Fine-Tuning",
+			"description": "Process of refining a pre-existing AI model using specific datasets to enhance its performance and understanding."
+		},
+		{
+			"name": "Data Collection",
+			"description": "Gathering and processing datasets in a structured manner to support machine learning."
+		},
+		{
+			"name": "Supervised Learning",
+			"description": "A type of machine learning where the model is trained using labeled data."
+		},
+		{
+			"name": "Data Cleaning",
+			"description": "The process of removing errors, inconsistencies, and irrelevant data from the dataset."
+		},
+		{
+			"name": "Feature Engineering",
+			"description": "The creation of new features or transformations of existing features to improve model performance."
+		},
+		{
+			"name": "Model Optimization",
+			"description": "Techniques used to improve the performance of a model, including quantization for resource optimization."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "AI Model Fine-Tuning Setup",
+			"description": "Setting up the machine learning environment to fine-tune an AI model with specific datasets.",
+			"steps": [
+				"Preprocess dataset for training.",
+				"Train AI model with selected datasets.",
+				"Iteratively fine-tune model for performance enhancement."
+			]
+		},
+		{
+			"name": "Data Collection Infrastructure",
+			"description": "Building the infrastructure for gathering and processing relevant datasets.",
+			"steps": [
+				"Identify required datasets.",
+				"Collect data using scraping tools or APIs.",
+				"Ensure data is cleaned and properly formatted."
+			]
+		},
+		{
+			"name": "Supervised Learning Setup",
+			"description": "Setting up labeled training datasets and evaluation systems for supervised learning.",
+			"steps": [
+				"Label the data for training.",
+				"Train the model with labeled data.",
+				"Evaluate model accuracy using validation sets."
+			]
+		},
+		{
+			"name": "Data Cleaning Pipeline",
+			"description": "Creating a data pipeline to clean, preprocess, and transform raw data into usable formats.",
+			"steps": [
+				"Remove duplicates and irrelevant data.",
+				"Fix inconsistencies in the dataset.",
+				"Transform raw data into a usable format."
+			]
+		},
+		{
+			"name": "Feature Engineering Tools",
+			"description": "Using tools to create new features or modify existing ones to improve model performance.",
+			"steps": [
+				"Identify key features from raw data.",
+				"Create new features based on domain knowledge.",
+				"Evaluate new features for performance improvements."
+			]
+		},
+		{
+			"name": "Model Optimization Infrastructure",
+			"description": "Setting up infrastructure for optimizing AI models, including model quantization and pruning.",
+			"steps": [
+				"Perform model quantization to reduce size and improve speed.",
+				"Use pruning techniques to remove unnecessary weights.",
+				"Evaluate the optimized model for accuracy loss."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "Data Collection and Organization",
+			"description": "Expertise in gathering and processing large datasets, ensuring relevance and quality."
+		},
+		{
+			"name": "Data Cleaning and Feature Engineering",
+			"description": "Strong skills in cleaning and transforming raw data into structured formats for AI model training."
+		},
+		{
+			"name": "AI Model Fine-Tuning",
+			"description": "Experience in fine-tuning large language models using specific libraries and tools to enhance performance."
+		},
+		{
+			"name": "Custom Prompt Design",
+			"description": "Ability to craft custom prompt templates to improve model comprehension and outputs."
+		},
+		{
+			"name": "Quantization and Model Optimization",
+			"description": "Proficiency in working with quantized models for resource efficiency during training."
+		},
+		{
+			"name": "Supervised Learning",
+			"description": "Understanding of supervised learning techniques, particularly with regards to data labeling and structured learning."
+		}
+	],
+	"challenges_faced": [],
+	"outcomes": [
+		{
+			"name": "Improved AI Model Performance",
+			"description": "The fine-tuned model showed significant improvements in understanding and matching structured data."
+		},
+		{
+			"name": "Custom Prompt Effectiveness",
+			"description": "Custom prompts helped achieve more accurate and contextually relevant outputs."
+		}
+	],
+	"links": []
+}

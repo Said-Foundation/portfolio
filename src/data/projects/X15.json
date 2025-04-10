@@ -1,0 +1,133 @@
+{
+	"id": 15,
+	"project_name": "OCR Read Using Large Language Models (LLM) for Readability and Understanding",
+	"description": "The project utilized large language models (LLMs) for Optical Character Recognition (OCR) to extract and structure menu data from images. The task also involved addressing Turkish special character encoding issues and ensuring data was output in a structured JSON format.",
+	"year": 2024,
+	"month": 8,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "AWS Bedrock",
+			"description": "AWS service for model interaction, used to send images to the Claude 3 Haiku model for text interpretation."
+		},
+		{
+			"name": "Claude 3 Haiku",
+			"description": "Large language model used for understanding and structuring menu data from images."
+		},
+		{
+			"name": "Python",
+			"description": "Programming language used for automating the encoding of images, model interaction, and processing of responses."
+		},
+		{
+			"name": "Data Processing",
+			"description": "Data format for structuring and saving the menu data."
+		},
+		{
+			"name": "Encryption",
+			"description": "Encoding method used for converting images to a format suitable for model input."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "AWS Bedrock Setup",
+			"description": "Setting up AWS Bedrock service for model interaction and text interpretation.",
+			"steps": [
+				"Set up an AWS Bedrock account.",
+				"Configure the service to interact with the Claude 3 Haiku model.",
+				"Send image data via API to the model for text interpretation."
+			]
+		},
+		{
+			"name": "Claude 3 Haiku Integration",
+			"description": "Integration of Claude 3 Haiku for OCR and data structuring.",
+			"steps": [
+				"Configure model environment (via API or SDK).",
+				"Send image data to the model for OCR and text parsing.",
+				"Interpret and structure the parsed data based on model outputs."
+			]
+		},
+		{
+			"name": "Python Environment Setup",
+			"description": "Setting up Python environment for image encoding, model interaction, and data handling.",
+			"steps": [
+				"Install necessary libraries (e.g., requests, base64).",
+				"Write scripts to encode images, call the model API, and process the response.",
+				"Handle data formatting and structure the response into JSON."
+			]
+		},
+		{
+			"name": "JSON Data Structuring",
+			"description": "Structuring menu data into JSON format for output.",
+			"steps": [
+				"Design JSON schema for the menu data.",
+				"Ensure data integrity and structure before saving.",
+				"Export structured data into JSON format for further processing."
+			]
+		},
+		{
+			"name": "Base64 Encoding",
+			"description": "Using Base64 encoding to prepare image data for model input.",
+			"steps": [
+				"Use Python's base64 library to encode images into a string.",
+				"Send the encoded image to the model for processing.",
+				"Decode the processed data back into a usable format if needed."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "AWS",
+			"description": "Proficiency in managing and interacting with AWS services, specifically AWS Bedrock for model deployment and API interactions."
+		},
+		{
+			"name": "OCR",
+			"description": "Experience with Optical Character Recognition (OCR) processes, especially involving LLMs for extracting and structuring data from images."
+		},
+		{
+			"name": "Large Language Models",
+			"description": "Expertise in working with LLMs like Claude 3 Haiku for text interpretation, particularly in unstructured data parsing and processing."
+		},
+		{
+			"name": "Python Programming",
+			"description": "Strong Python programming skills for automation, image processing, model interaction, and data handling."
+		},
+		{
+			"name": "Error Handling and Debugging",
+			"description": "Ability to implement effective error handling strategies to deal with incomplete or erroneous model responses."
+		},
+		{
+			"name": "Unicode Handling",
+			"description": "Experience with character encoding and decoding, particularly handling non-ASCII characters like Turkish special characters."
+		},
+		{
+			"name": "JSON Manipulation",
+			"description": "Proficient in reading, writing, and manipulating JSON data for structured data management and export."
+		}
+	],
+	"challenges_faced": [
+		{
+			"name": "Model Parsing",
+			"description": "Ensuring accurate parsing of images into structured data by models."
+		},
+		{
+			"name": "Unicode Handling",
+			"description": "Dealing with Turkish special characters and ensuring correct encoding/decoding."
+		},
+		{
+			"name": "Error Handling",
+			"description": "Creating robust error handling mechanisms for incomplete or faulty model responses."
+		}
+	],
+	"outcomes": [
+		{
+			"name": "Structured JSON Output",
+			"description": "Successfully structured menu data in JSON format, with proper handling of Turkish characters."
+		},
+		{
+			"name": "Error Logs",
+			"description": "Generated error logs for incomplete model responses and handled raw data processing."
+		}
+	],
+	"links": []
+}

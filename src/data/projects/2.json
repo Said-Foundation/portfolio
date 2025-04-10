@@ -1,0 +1,78 @@
+{
+	"id": 2,
+	"project_name": "Advanced AWS Infrastructure with Terraform",
+	"description": "Automated complex AWS infrastructure with Terraform, including VPC, CloudFront, EC2, ALB, ElastiCache, AWS MQ, and S3 for high availability and security.",
+	"year": 2023,
+	"month": 9,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "Terraform",
+			"description": "Infrastructure as Code for automating cloud resource management."
+		},
+		{
+			"name": "AWS CloudFront",
+			"description": "Content Delivery Network for low-latency access."
+		},
+		{
+			"name": "AWS ElastiCache",
+			"description": "Managed Redis for caching and performance optimization."
+		},
+		{
+			"name": "AWS AWS MQ",
+			"description": "Managed message broker for asynchronous communication."
+		},
+		{
+			"name": "AWS S3",
+			"description": "Cloud storage for static assets and backups."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "VPC and Subnet Configuration",
+			"description": "Designed a VPC with public and private subnets for secure resource segregation.",
+			"steps": [
+				"Configured public/private subnets with routing tables.",
+				"Set up NAT gateways for secure outbound traffic."
+			]
+		},
+		{
+			"name": "CloudFront CDN",
+			"description": "Configured CloudFront to serve static content from S3.",
+			"steps": [
+				"Set up CloudFront distribution with custom domain.",
+				"Enabled SSL/TLS for secure content delivery."
+			]
+		},
+		{
+			"name": "ElastiCache Setup",
+			"description": "Deployed Redis cluster for caching application data.",
+			"steps": [
+				"Provisioned ElastiCache Redis cluster.",
+				"Configured security groups for VPC communication."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "Terraform",
+			"description": "Expert in automating cloud infrastructure with Terraform."
+		},
+		{
+			"name": "AWS Cloud Networking",
+			"description": "Advanced knowledge of VPCs, NAT gateways, and routing."
+		},
+		{
+			"name": "Caching Strategies",
+			"description": "Experience with Redis and CloudFront for content caching."
+		},
+		{
+			"name": "Security and Compliance",
+			"description": "Configured IAM roles, SSL/TLS, and security groups."
+		}
+	],
+	"challenges_faced": [],
+	"outcomes": [],
+	"links": []
+}

@@ -1,0 +1,66 @@
+{
+	"id": 3,
+	"project_name": "AWS Machine Learning Deployment with Terraform",
+	"description": "Automated deployment of ML infrastructure using Terraform, including Elastic Beanstalk, API Gateway, Lambda, and SageMaker for model training and real-time inference.",
+	"year": 2023,
+	"month": 10,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "Terraform",
+			"description": "Automates provisioning and management of AWS resources."
+		},
+		{
+			"name": "AWS SageMaker",
+			"description": "Machine learning service for training and deploying models."
+		},
+		{
+			"name": "AWS API Gateway",
+			"description": "API management service for exposing endpoints."
+		},
+		{
+			"name": "AWS Lambda",
+			"description": "Serverless functions for scalable backend logic."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "SageMaker Deployment",
+			"description": "Provisioned SageMaker for model training and inference.",
+			"steps": [
+				"Configured SageMaker training jobs and inference endpoints.",
+				"Integrated models with API Gateway for real-time predictions."
+			]
+		},
+		{
+			"name": "Serverless Architecture",
+			"description": "Implemented serverless functions using AWS Lambda.",
+			"steps": [
+				"Created Lambda functions for processing API requests.",
+				"Set up IAM roles for secure API access."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "Machine Learning Deployment",
+			"description": "Deploying ML models on SageMaker for real-time inference."
+		},
+		{
+			"name": "Serverless Architectures",
+			"description": "Using AWS Lambda for cost-effective and scalable compute."
+		},
+		{
+			"name": "API Integration",
+			"description": "Exposing ML models as APIs using API Gateway."
+		},
+		{
+			"name": "Terraform",
+			"description": "Proficient in deploying complex infrastructures with Terraform."
+		}
+	],
+	"challenges_faced": [],
+	"outcomes": [],
+	"links": []
+}

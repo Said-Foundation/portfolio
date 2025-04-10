@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-primary min-h-screen font-sans;
+  }
+}
+
+@layer components {
+  .section {
+    @apply min-h-screen w-full px-4 py-16 md:px-8;
+  }
+  
+  .container {
+    @apply mx-auto max-w-6xl;
+  }
+  
+  .nav-link {
+    @apply text-secondary hover:text-accent transition-colors duration-200 font-medium;
+  }
+  
+  .card {
+    @apply border border-border rounded-lg p-6 hover:border-accent transition-colors duration-200 bg-card;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-background hover:bg-opacity-90 hover:shadow-accent;
+  }
+
+  .btn-secondary {
+    @apply bg-border text-primary hover:bg-opacity-80 hover:border-accent hover:border;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 bg-border rounded-full text-sm text-secondary;
+  }
+}
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme color scheme */
+:root {
+  --background: #121212;
+  --card: #1e1e1e;
+  --primary: #ffffff;
+  --secondary: #a0a0a0;
+  --accent: #66fcf1;
+  --border: #333333;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    @apply py-12;
+  }
+  
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  h3 {
+    @apply text-xl;
+  }
+  
+  .btn {
+    @apply px-3 py-2 text-sm;
+  }
+}
+
+/* Fix for uneven button styling */
+.btn-primary, .btn-secondary {
+  @apply min-w-[120px] text-center;
+}
+
+/* Improve card styling */
+.card {
+  @apply shadow-sm hover:shadow-md transition-all duration-300;
+}
+
+/* Improve modal styling */
+.modal-content {
+  @apply shadow-xl border border-border;
+}

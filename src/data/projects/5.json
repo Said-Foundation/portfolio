@@ -1,0 +1,89 @@
+{
+	"id": 5,
+	"project_name": "Terraform and AI Integration for Stable Diffusion",
+	"description": "Integrating AWS services with Terraform to create a scalable, cost-optimized environment for image generation using Stable Diffusion. The infrastructure supports AI-based image generation with automated scaling and efficient cost management.",
+	"year": 2023,
+	"month": 11,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "Terraform",
+			"description": "Used for automating the setup and management of AWS resources."
+		},
+		{
+			"name": "AWS VPC & Subnets",
+			"description": "Proficiency in configuring VPCs, subnets (public/private), and routing for secure network communications."
+		},
+		{
+			"name": "AWS Lambda",
+			"description": "Serverless computing service for scalable request handling and image processing."
+		},
+		{
+			"name": "Stable Diffusion",
+			"description": "AI model used for generating and fine-tuning images."
+		},
+		{
+			"name": "AWS EC2",
+			"description": "Used for training the Stable Diffusion model with fine-tuning."
+		},
+		{
+			"name": "AWS DynamoDB",
+			"description": "Managed NoSQL database for storing metadata related to model operations and user requests."
+		},
+		{
+			"name": "AWS S3",
+			"description": "Object storage for managing user-specific image data."
+		},
+		{
+			"name": "AWS Systems Manager (SSM)",
+			"description": "Managed secure configurations and secrets."
+		},
+		{
+			"name": "Boto3",
+			"description": "Python SDK for AWS service interactions, including S3."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "Infrastructure Setup",
+			"description": "Automated AWS resource management using Terraform.",
+			"steps": [
+				"Set up AWS Amplify for frontend deployment.",
+				"Implemented Lambda functions for image processing and request handling.",
+				"Deployed EC2 instances for Stable Diffusion model training.",
+				"Set up DynamoDB for metadata management."
+			]
+		},
+		{
+			"name": "AI Generation Flow",
+			"description": "Handling user requests for image generation and optimizing resource usage.",
+			"steps": [
+				"User requests containing images are processed by Lambda functions.",
+				"Stable Diffusion model on EC2 generates images based on input.",
+				"Generated images are delivered to users with resources cleaned up after processing."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "Cloud Infrastructure",
+			"description": "Experience with AWS services such as Lambda, EC2, DynamoDB, and S3 for AI-based infrastructure."
+		},
+		{
+			"name": "AI & Machine Learning",
+			"description": "Knowledge of Stable Diffusion for image generation and model fine-tuning."
+		},
+		{
+			"name": "Cost Optimization",
+			"description": "Implemented automated scaling and cleanup mechanisms to optimize resource usage."
+		},
+		{
+			"name": "Security",
+			"description": "Ensured secure handling of data using S3 and IAM roles for access control."
+		}
+	],
+	"challenges_faced": [],
+	"outcomes": [],
+	"links": []
+}

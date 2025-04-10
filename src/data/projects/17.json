@@ -1,0 +1,190 @@
+{
+	"id": 17,
+	"project_name": "AWS Infrastructure Setup with Terraform",
+	"description": "Automated AWS infrastructure provisioning using Terraform, incorporating services like EKS, RDS, MongoDB, and Vault for a cloud-based application setup.",
+	"year": 2024,
+	"month": 9,
+	"role": "",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "Terraform",
+			"description": "Used to automate infrastructure provisioning and manage AWS services."
+		},
+		{
+			"name": "AWS VPC & Subnets",
+			"description": "Proficiency in configuring VPCs, subnets (public/private), and routing for secure network communications."
+		},
+		{
+			"name": "AWS Route 53",
+			"description": "Managed DNS service to route traffic to resources."
+		},
+		{
+			"name": "AWS Elastic Load Balancer (ALB)",
+			"description": "Used to distribute traffic across multiple EC2 instances and services."
+		},
+		{
+			"name": "Amazon EKS",
+			"description": "Used for managing Kubernetes clusters and orchestrating containerized applications."
+		},
+		{
+			"name": "Amazon RDS",
+			"description": "Managed relational database service for SQL databases."
+		},
+		{
+			"name": "AWS MongoDB",
+			"description": "Used as a NoSQL database for scalable storage."
+		},
+		{
+			"name": "Amazon Elasticache",
+			"description": "In-memory caching service to improve application performance."
+		},
+		{
+			"name": "Vault HCP",
+			"description": "Expertise in integrating Vault for secure secret management."
+		},
+		{
+			"name": "Service Mesh",
+			"description": "Knowledge of service mesh technologies for microservice communication."
+		},
+		{
+			"name": "Cloud Security",
+			"description": "Experience in securing cloud environments using best practices and tools like Vault."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "AWS VPC Setup",
+			"description": "Secure network isolation for AWS resources.",
+			"steps": [
+				"Create VPC: Set up a virtual private cloud for network isolation.",
+				"Configure Subnets: Define subnets for different layers (public/private).",
+				"Set Up Security Groups: Configure firewalls for resource access control."
+			]
+		},
+		{
+			"name": "Route 53 Configuration",
+			"description": "DNS management for routing traffic.",
+			"steps": [
+				"Create Hosted Zones: Manage DNS settings for domain routing.",
+				"Route Traffic: Configure routing rules for application traffic."
+			]
+		},
+		{
+			"name": "Elastic Load Balancer (ALB) Setup",
+			"description": "Traffic distribution across multiple EC2 instances.",
+			"steps": [
+				"Provision Load Balancer: Deploy ALB for distributing incoming traffic.",
+				"Target Group Setup: Configure target groups for traffic forwarding."
+			]
+		},
+		{
+			"name": "EKS Cluster Provisioning",
+			"description": "Container orchestration with Kubernetes.",
+			"steps": [
+				"Create EKS Cluster: Provision an Amazon EKS cluster for containerized workloads.",
+				"Configure Kubernetes: Set up Kubernetes environment for application management."
+			]
+		},
+		{
+			"name": "RDS Integration",
+			"description": "Set up relational database with Amazon RDS.",
+			"steps": [
+				"Provision RDS Instance: Deploy relational database services.",
+				"Configure Backup and Scaling: Set up backups and scalability for high availability."
+			]
+		},
+		{
+			"name": "AWS MongoDB Setup",
+			"description": "NoSQL database setup with MongoDB.",
+			"steps": [
+				"Deploy MongoDB: Set up MongoDB clusters for scalable storage.",
+				"Configure Replication: Ensure data redundancy and high availability."
+			]
+		},
+		{
+			"name": "Elasticache Deployment",
+			"description": "In-memory caching for improved performance.",
+			"steps": [
+				"Provision Elasticache Cluster: Deploy Elasticache for caching data.",
+				"Integrate with Application: Connect Elasticache with applications for improved response times."
+			]
+		},
+		{
+			"name": "Vault HCP Integration",
+			"description": "Secure secret management with Vault.",
+			"steps": [
+				"Configure Vault: Set up Vault for managing sensitive information.",
+				"Integrate Vault with Applications: Enable secure access to secrets in the infrastructure."
+			]
+		},
+		{
+			"name": "Service Mesh Setup",
+			"description": "Enhanced communication for microservices.",
+			"steps": [
+				"Deploy Service Mesh: Set up Istio or similar service mesh solution.",
+				"Configure Service Communication: Enable secure and reliable communication between services."
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "Terraform",
+			"description": "Expertise in automating AWS infrastructure provisioning using Terraform."
+		},
+		{
+			"name": "AWS Services",
+			"description": "In-depth knowledge of various AWS services such as VPC, Route 53, ALB, EKS, RDS, and Elasticache."
+		},
+		{
+			"name": "Kubernetes",
+			"description": "Strong skills in managing containerized applications using EKS and Kubernetes."
+		},
+		{
+			"name": "Helm Charts",
+			"description": "Proficient in deploying and managing Kubernetes applications using Helm."
+		},
+		{
+			"name": "Vault HCP",
+			"description": "Experience in configuring and integrating Vault for secure secret management."
+		},
+		{
+			"name": "Service Mesh",
+			"description": "Skills in managing microservice communication using service mesh technologies."
+		},
+		{
+			"name": "Database Management",
+			"description": "Proficiency in both relational databases (RDS) and NoSQL databases (MongoDB)."
+		},
+		{
+			"name": "Cloud Security",
+			"description": "Experience implementing cloud security best practices, including using Vault and securing network communication."
+		}
+	],
+	"challenges_faced": [
+		{
+			"name": "Service Mesh Complexity",
+			"description": "Managing and configuring a service mesh for microservices communication."
+		},
+		{
+			"name": "Vault Integration",
+			"description": "Ensuring seamless integration of Vault for secure secret management."
+		}
+	],
+	"outcomes": [
+		{
+			"name": "Automated Infrastructure Setup",
+			"description": "Fully automated AWS infrastructure setup using Terraform, saving time and reducing manual errors."
+		},
+		{
+			"name": "Scalable Architecture",
+			"description": "Built a scalable architecture with EKS, RDS, and MongoDB, ensuring high availability and reliability."
+		}
+	],
+	"links": [
+		{
+			"name": "Project Documentation",
+			"url": ""
+		}
+	]
+}
