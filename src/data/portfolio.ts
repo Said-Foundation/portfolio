@@ -73,7 +73,7 @@ export interface BlogPost {
 
 export const portfolioData = {
   name: "Said Mustafa",
-  title: "AI & Cloud ML Specialist | DevOps Engineer",
+  title: "AI & ML Specialist | DevOps Engineer",
   bio: "AI and Cloud ML Specialist with 2+ years of experience developing secure, scalable cloud solutions. Skilled in optimizing machine learning workflows and deploying models efficiently on cloud platforms.",
   skills: {
     technical: [
