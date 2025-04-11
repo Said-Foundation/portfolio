@@ -27,7 +27,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
     className: string = "bg-background/50 p-3 sm:p-4 rounded-lg border border-border"
   ) => (
     <div className="mb-4 last:mb-0">
-      <h3 className="text-lg font-semibold mb-2 text-accent">{title}</h3>
+      <h3 className="text-lg font-semibold mb-2 text-primary">{title}</h3>
       <div className={className}>
         {content}
       </div>
@@ -55,7 +55,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             {/* Header */}
             <div className="flex justify-between items-start mb-4 bg-card pb-2">
               <div className="pr-8">
-                <h2 className="text-xl sm:text-2xl font-bold mb-1 text-accent">{project.title}</h2>
+                <h2 className="text-xl sm:text-2xl font-bold mb-1 text-primary">{project.title}</h2>
                 <div className="flex flex-wrap items-center text-secondary gap-x-2 text-sm">
                   <span>{formatDate(project.year, project.month)}</span>
                   {project.role && (
@@ -74,7 +74,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               </div>
               <button
                 onClick={onClose}
-                className="text-secondary hover:text-accent transition-colors p-1 rounded-full hover:bg-background/80 -mt-1 -mr-2"
+                className="text-secondary hover:text-primary transition-colors p-1 rounded-full hover:bg-background/80 -mt-1 -mr-2"
                 aria-label="Close modal"
               >
                 <svg
@@ -108,7 +108,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-background text-accent rounded-md border border-accent/30 text-xs"
+                      className="px-2 py-1 bg-background text-primary rounded-md border border-border text-xs"
                     >
                       {tech}
                     </span>
@@ -121,7 +121,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 "Implementation Details",
                 <div className="space-y-3">
                   {project.infrastructure?.map((item: Infrastructure) => (
-                    <div key={item.name} className="border-l-2 border-accent pl-3">
+                    <div key={item.name} className="border-l-2 border-border pl-3">
                       <h4 className="font-medium mb-1 text-primary text-base">{item.name}</h4>
                       <p className="text-secondary text-sm mb-2">{item.description}</p>
                       {hasContent(item.steps) && (
@@ -144,7 +144,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 {/* Skills Section */}
                 {hasContent(project.skillsRequired) && (
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-accent">Skills Used</h3>
+                    <h3 className="text-lg font-semibold mb-2 text-primary">Skills Used</h3>
                     <div className="bg-background/50 p-3 rounded-lg border border-border h-full">
                       <ul className="space-y-2">
                         {project.skillsRequired?.map((skill: Skill) => (
@@ -163,7 +163,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 {/* Challenges Section */}
                 {hasContent(project.challengesFaced) && (
                   <div>
-                    <h3 className="text-lg font-semibold mb-2 text-accent">Challenges & Solutions</h3>
+                    <h3 className="text-lg font-semibold mb-2 text-primary">Challenges & Solutions</h3>
                     <div className="bg-background/50 p-3 rounded-lg border border-border h-full">
                       <ul className="space-y-2">
                         {project.challengesFaced && typeof project.challengesFaced[0] === 'string' ? (
@@ -195,7 +195,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                   {project.outcomes && typeof project.outcomes[0] === 'string' ? (
                     project.outcomes.map((outcome, idx) => (
                       <li key={idx} className="text-secondary flex items-start text-sm">
-                        <span className="text-accent mr-2 mt-0.5">✓</span>
+                        <span className="text-primary mr-2 mt-0.5">✓</span>
                         <span>{outcome}</span>
                       </li>
                     ))
@@ -217,7 +217,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               {/* Links Section */}
               {hasContent(project.links) && (
                 <div className="mt-4">
-                  <h3 className="text-lg font-semibold mb-2 text-accent">Project Links</h3>
+                  <h3 className="text-lg font-semibold mb-2 text-primary">Project Links</h3>
                   <div className="flex flex-wrap gap-2">
                     {project.links?.map((link: Link) => (
                       <a
