@@ -34,10 +34,37 @@
 	],
 	"shortcuts": [
 		{
+			"name": "Home",
+			"short_name": "Home",
+			"description": "Go to the Home section",
+			"url": "#home",
+			"icons": [
+				{ "src": "/photos/img/192x192_favicon.png", "sizes": "192x192" }
+			]
+		},
+		{
+			"name": "Certificates",
+			"short_name": "Certificates",
+			"description": "Go to the Certificates section",
+			"url": "#certificates",
+			"icons": [
+				{ "src": "/photos/img/192x192_favicon.png", "sizes": "192x192" }
+			]
+		},
+		{
+			"name": "About",
+			"short_name": "About",
+			"description": "Go to the About section",
+			"url": "#about",
+			"icons": [
+				{ "src": "/photos/img/192x192_favicon.png", "sizes": "192x192" }
+			]
+		},
+		{
 			"name": "Projects",
 			"short_name": "Projects",
-			"description": "View my projects",
-			"url": "/projects",
+			"description": "Go to the Projects section",
+			"url": "#projects",
 			"icons": [
 				{ "src": "/photos/img/192x192_favicon.png", "sizes": "192x192" }
 			]
@@ -45,8 +72,8 @@
 		{
 			"name": "Contact",
 			"short_name": "Contact",
-			"description": "Get in touch",
-			"url": "/contact",
+			"description": "Go to the Contact section",
+			"url": "#contact",
 			"icons": [
 				{ "src": "/photos/img/192x192_favicon.png", "sizes": "192x192" }
 			]
