@@ -1,0 +1,111 @@
+{
+	"id": 16,
+	"project_name": "OCR Pipeline Automation",
+	"description": "Developed fully automated OCR pipeline for restaurant menu processing using AWS Bedrock, processing 100+ menu images with Claude 3 Haiku and Sonnet models for structured data extraction.",
+	"year": 2024,
+	"month": 6,
+	"role": "AI/ML Engineer",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "AWS Bedrock",
+			"description": "Used Claude 3 Haiku and Sonnet models for advanced image processing and text extraction."
+		},
+		{
+			"name": "Python",
+			"description": "Developed automation scripts for image processing and data extraction workflows."
+		},
+		{
+			"name": "OCR (Optical Character Recognition)",
+			"description": "Implemented automated text extraction from menu images with high accuracy."
+		},
+		{
+			"name": "JSON Processing",
+			"description": "Created structured data output format for menu items, prices, and special offers."
+		},
+		{
+			"name": "Data Validation",
+			"description": "Built automated validation and cleaning processes for extracted data."
+		},
+		{
+			"name": "Excel/PDF Processing",
+			"description": "Handled 90+ Excel files and PDF documents for menu digitization."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "AWS Bedrock Integration",
+			"description": "Configured AWS Bedrock runtime client for Claude 3 model access.",
+			"steps": [
+				"Set up AWS Bedrock runtime client with proper authentication",
+				"Configured model parameters for optimal image processing",
+				"Implemented error handling and retry mechanisms"
+			]
+		},
+		{
+			"name": "Image Processing Pipeline",
+			"description": "Built automated pipeline for processing menu images and extracting structured data.",
+			"steps": [
+				"Developed image preprocessing and encoding functions",
+				"Created prompt engineering for menu data extraction",
+				"Implemented JSON parsing and validation logic"
+			]
+		},
+		{
+			"name": "Data Output Management",
+			"description": "Organized extracted data into structured JSON format with proper categorization.",
+			"steps": [
+				"Designed JSON schema for menu items and pricing",
+				"Implemented data cleaning and normalization",
+				"Created automated file organization and storage"
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "AWS Bedrock",
+			"description": "Expertise in using AWS Bedrock for AI model inference and image processing."
+		},
+		{
+			"name": "OCR Technology",
+			"description": "Deep understanding of optical character recognition and text extraction."
+		},
+		{
+			"name": "Python Development",
+			"description": "Proficient in Python for automation and data processing workflows."
+		},
+		{
+			"name": "Data Processing",
+			"description": "Experience with data validation, cleaning, and structured output generation."
+		},
+		{
+			"name": "API Integration",
+			"description": "Skilled in integrating AI services and handling API responses."
+		}
+	],
+	"challenges_faced": [
+		"Processing diverse menu formats and layouts across 100+ images",
+		"Ensuring consistent JSON output format for different menu structures",
+		"Handling various image qualities and text orientations",
+		"Managing large-scale data processing with multiple file formats"
+	],
+	"outcomes": [
+		"80% reduction in manual document processing time",
+		"95% OCR accuracy achieved across diverse menu formats",
+		"Successfully processed 100+ menu images with structured output",
+		"Automated data extraction from 90+ Excel and PDF files",
+		"Scalable solution for restaurant menu digitization"
+	],
+	"links": [],
+	"achievement_log": {
+		"title": "Enterprise OCR Pipeline Automation & Advanced Document Processing Platform",
+		"date": "2024-06-05",
+		"description": "Developed enterprise-grade fully automated OCR pipeline for restaurant menu processing using advanced AWS Bedrock AI capabilities",
+		"key_achievements": [
+			"Architected and built sophisticated end-to-end system processing 100+ menu images with advanced Claude 3 Haiku and Sonnet models, implementing intelligent image preprocessing and optimization",
+			"Engineered sophisticated structured data extraction with advanced JSON output format for menu items, pricing structures, and special offers with intelligent validation and error handling",
+			"Created enterprise-grade automated data validation and cleaning processes for 90+ Excel files and PDF documents with advanced quality assurance protocols"
+		],
+		"results": "80% reduction in manual document processing, 95% OCR accuracy, and scalable enterprise menu digitization"
+	}
+}

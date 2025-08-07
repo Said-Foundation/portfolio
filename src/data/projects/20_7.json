@@ -1,0 +1,115 @@
+{
+	"id": 20,
+	"project_name": "Database Migration & EKS Integration",
+	"description": "Successfully migrated 400+ tables from SQL Server to RDS MySQL in 6-hour production window using AWS DMS, with complex data transformation and automated maintenance systems.",
+	"year": 2024,
+	"month": 7,
+	"role": "DevOps Engineer",
+	"project_type": "individual",
+	"technologies_used": [
+		{
+			"name": "AWS DMS (Database Migration Service)",
+			"description": "Used for migrating 400+ tables from SQL Server to RDS MySQL with custom mapping rules."
+		},
+		{
+			"name": "AWS RDS MySQL",
+			"description": "Target database for migration with optimized configuration for production workloads."
+		},
+		{
+			"name": "AWS EKS",
+			"description": "Kubernetes cluster integration for application deployment and management."
+		},
+		{
+			"name": "SQL Server",
+			"description": "Source database system requiring complex migration strategies."
+		},
+		{
+			"name": "Cron Jobs",
+			"description": "Automated maintenance and data archiving processes with 100% success rate."
+		},
+		{
+			"name": "Bash Scripting",
+			"description": "Automation scripts for migration tasks and system maintenance."
+		}
+	],
+	"infrastructure": [
+		{
+			"name": "AWS DMS Configuration",
+			"description": "Set up comprehensive database migration service with custom mapping and transformation rules.",
+			"steps": [
+				"Configured DMS replication instances with appropriate sizing",
+				"Created source and target endpoints for SQL Server and MySQL",
+				"Implemented custom mapping rules for data transformation",
+				"Set up monitoring and alerting for migration progress"
+			]
+		},
+		{
+			"name": "Data Migration Pipeline",
+			"description": "Built end-to-end migration pipeline handling 400+ tables with complex dependencies.",
+			"steps": [
+				"Resolved data type errors and compatibility issues",
+				"Handled function and view migrations with custom scripts",
+				"Implemented dependency resolution for table relationships",
+				"Created rollback procedures for migration safety"
+			]
+		},
+		{
+			"name": "EKS Integration",
+			"description": "Integrated migrated database with existing EKS system for seamless application deployment.",
+			"steps": [
+				"Updated application configurations for new database endpoints",
+				"Performed live testing and debugging in production environment",
+				"Implemented connection pooling and performance optimization",
+				"Set up monitoring and alerting for database performance"
+			]
+		},
+		{
+			"name": "Automated Maintenance",
+			"description": "Created cron jobs and automated processes for ongoing database maintenance.",
+			"steps": [
+				"Implemented automated data archiving procedures",
+				"Created maintenance scripts for database optimization",
+				"Set up monitoring for database health and performance",
+				"Established backup and recovery procedures"
+			]
+		}
+	],
+	"skills_required": [
+		{
+			"name": "AWS DMS",
+			"description": "Expertise in database migration service configuration and management."
+		},
+		{
+			"name": "Database Migration",
+			"description": "Deep understanding of complex database migration strategies and best practices."
+		},
+		{
+			"name": "SQL Server & MySQL",
+			"description": "Proficient in both source and target database systems."
+		},
+		{
+			"name": "AWS EKS",
+			"description": "Experience with Kubernetes cluster management and application deployment."
+		},
+		{
+			"name": "Automation",
+			"description": "Skilled in creating automated maintenance and monitoring systems."
+		}
+	],
+	"challenges_faced": [
+		"Managing 400+ tables with complex interdependencies during migration",
+		"Resolving data type errors and compatibility issues between SQL Server and MySQL",
+		"Ensuring zero downtime during production migration",
+		"Handling function and view migrations with custom transformation logic",
+		"Integrating migrated database with existing EKS application stack"
+	],
+	"outcomes": [
+		"Zero downtime migration completed in 6-hour production window",
+		"100% data integrity maintained throughout migration process",
+		"Successful integration with existing EKS system",
+		"Automated maintenance processes with 100% success rate",
+		"Improved database performance and reliability post-migration"
+	],
+	"links": [],
+	"achievement_log": "**2024-07-15**: Successfully orchestrated complex enterprise migration of 400+ tables from SQL Server to RDS MySQL in 6-hour production window with zero downtime. Resolved sophisticated data type errors, complex dependency issues, advanced functions, and views during enterprise migration process. Implemented enterprise-grade AWS DMS (Database Migration Service) with advanced custom mapping rules and sophisticated data transformation protocols. Engineered automated cron jobs for enterprise data archiving and maintenance with 100% success rate and comprehensive monitoring. Seamlessly integrated migrated database with existing EKS system and performed comprehensive live testing and debugging protocols. **Result**: Zero downtime enterprise migration, 100% data integrity, and successful enterprise system integration."
+}

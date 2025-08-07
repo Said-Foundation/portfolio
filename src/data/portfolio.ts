@@ -1,6 +1,7 @@
-import { config } from '../config';
 import { loadProjects } from './projects';
+import infoData from './info.json';
 
+// Type definitions
 export interface Experience {
   company: string;
   title: string;
@@ -41,6 +42,7 @@ export interface Link {
 
 export interface Project {
   id: number;
+  ranking?: number;
   title: string;
   description: string;
   technologies: string[];
@@ -55,6 +57,7 @@ export interface Project {
   links?: Link[];
   githubUrl?: string;
   demoUrl?: string;
+  achievementLog?: string;
 }
 
 export interface Certificate {
@@ -71,123 +74,19 @@ export interface BlogPost {
   url: string;
 }
 
+// Portfolio data loaded from info.json
 export const portfolioData = {
-  name: "Said Mustafa",
-  title: "AI & ML Specialist | DevOps Engineer",
-  bio: "AI and Cloud ML Specialist with 2+ years of experience developing secure, scalable cloud solutions. Skilled in optimizing machine learning workflows and deploying models efficiently on cloud platforms.",
-  skills: {
-    technical: [
-      // Cloud & Infrastructure
-      "AWS",
-      "Kubernetes",
-      "Terraform",
-      "EC2",
-      "S3",
-      "Lambda",
-      "CloudWatch",
-      "RDS",
-      "ElastiCache",
-      "CloudFront",
-      "SageMaker",
-      // AI & Machine Learning
-      "TensorFlow",
-      "PyTorch",
-      "MLflow",
-      "Large Language Models (LLMs)",
-      "Retrieval-Augmented Generation (RAG)",
-      "Natural Language Processing",
-      "Computer Vision",
-      "Deep Learning",
-      "Model Optimization",
-      "Hyperparameter Tuning",
-      // DevOps & Automation
-      "CI/CD",
-      "Docker",
-      "Bash",
-      "Git",
-      "GitHub Actions",
-      "Jenkins",
-      // Data Science & Analytics
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Matplotlib",
-      "Seaborn",
-      "SQL",
-    ],
-    soft: [
-      "Problem Solving",
-      "Team Leadership",
-      "Technical Writing",
-      "Project Management",
-      "Communication"
-    ],
-    languages: ["English", "Spanish"],
-  },
-  experience: [
-    {
-      company: "Skyloop Cloud",
-      title: "Cloud Machine Learning Specialist",
-      startDate: "September 2023",
-      endDate: "Present",
-      description:
-        "Architected and managed AWS infrastructure for high-performance AI applications with 99.9% uptime. Developed and deployed ML models using MLflow, fine-tuned LLMs, implemented RAG systems, built intelligent agent-based systems, and automated data processing pipelines.",
-    },
-    {
-      company: "BGA Bilgi Güvenliği A.Ş.",
-      title: "Intern Penetration Tester",
-      startDate: "August 2022",
-      endDate: "October 2022",
-      description:
-        "Conducted penetration testing and security audits using Burp Suite and Metasploit. Automated security tasks with Python and Bash, and presented complex security concepts to non-technical stakeholders.",
-    },
-    {
-      company: "Self-employed",
-      title: "Freelance Script Writer",
-      startDate: "January 2023",
-      endDate: "Present",
-      description:
-        "Developed automation scripts for Linux systems, applied web scraping techniques with BeautifulSoup and Scrapy, and created an AI-integrated trading bot using Python and TensorFlow.",
-    },
-  ] as Experience[],
-  education: [
-    {
-      institution: "Bahçeşehir University",
-      degree: "Bachelor of Science",
-      field: "Software Engineering (AI, Cloud Computing, Cybersecurity)",
-      startDate: "2019",
-      endDate: "2023",
-    },
-  ] as Education[],
+  ...infoData.personal,
+  skills: infoData.skills,
+  experience: infoData.experience as Experience[],
+  education: infoData.education as Education[],
   projects: loadProjects(),
-  certificates: [
-    {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      image: config.images.certificates[0],
-    },
-    {
-      title: "TensorFlow Developer Certificate",
-      issuer: "TensorFlow",
-      date: "2023",
-      image: config.images.certificates[1],
-    },
-    {
-      title: "Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2023",
-      image: config.images.certificates[2],
-    },
-  ] as Certificate[],
-  blogPosts: [
-    {
-      title: "Understanding LLMs",
-      date: "2024-03-15",
-      excerpt:
-        "A deep dive into how Large Language Models work and their applications in modern AI solutions.",
-      url: "/blog/understanding-llms",
-    },
-  ] as BlogPost[],
-  contact: config.contact,
+  certificates: infoData.certificates as Certificate[],
+  blogPosts: infoData.blogPosts as BlogPost[],
+  contact: infoData.contact,
+  theme: infoData.theme,
+  layout: infoData.layout,
+  animation: infoData.animation,
+  images: infoData.images,
+  settings: infoData.settings,
 };

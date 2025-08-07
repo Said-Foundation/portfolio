@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { portfolioData } from '../data/portfolio'
-import { config } from '../config'
+
 
 const About = () => {
   const [showAllSkills, setShowAllSkills] = useState(false);
   
-  const visibleSkills = showAllSkills 
-    ? portfolioData.skills.technical 
-    : portfolioData.skills.technical.slice(0, config.skills.defaultVisibleCount);
-  
-  const hasMoreSkills = portfolioData.skills.technical.length > config.skills.defaultVisibleCount;
+  const visibleSkills = showAllSkills
+    ? portfolioData.skills.technical
+    : portfolioData.skills.technical.slice(0, portfolioData.settings.skills.defaultVisibleCount);
+
+  const hasMoreSkills = portfolioData.skills.technical.length > portfolioData.settings.skills.defaultVisibleCount;
 
   return (
     <div className="grid md:grid-cols-2 gap-12">

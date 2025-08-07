@@ -1,0 +1,145 @@
+{
+  "personal": {
+    "name": "Said Mustafa",
+    "title": "AI & ML Specialist | DevOps Engineer",
+    "bio": "AI and Cloud ML Specialist with 2+ years of experience developing secure, scalable cloud solutions. Skilled in optimizing machine learning workflows and deploying models efficiently on cloud platforms."
+  },
+  "skills": {
+    "technical": [
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "EC2",
+      "S3",
+      "Lambda",
+      "CloudWatch",
+      "RDS",
+      "ElastiCache",
+      "CloudFront",
+      "SageMaker",
+      "TensorFlow",
+      "PyTorch",
+      "MLflow",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Deep Learning",
+      "Model Optimization",
+      "Hyperparameter Tuning",
+      "CI/CD",
+      "Docker",
+      "Bash",
+      "Git",
+      "GitHub Actions",
+      "Jenkins",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Matplotlib",
+      "Seaborn",
+      "SQL"
+    ],
+    "soft": [
+      "Problem Solving",
+      "Team Leadership",
+      "Technical Writing",
+      "Project Management",
+      "Communication"
+    ],
+    "languages": ["English", "Spanish"]
+  },
+  "experience": [
+    {
+      "company": "Skyloop Cloud",
+      "title": "Cloud Machine Learning Specialist",
+      "startDate": "September 2023",
+      "endDate": "Present",
+      "description": "Architected and managed AWS infrastructure for high-performance AI applications with 99.9% uptime. Developed and deployed ML models using MLflow, fine-tuned LLMs, implemented RAG systems, built intelligent agent-based systems, and automated data processing pipelines."
+    },
+    {
+      "company": "BGA Bilgi Güvenliği A.Ş.",
+      "title": "Intern Penetration Tester",
+      "startDate": "August 2022",
+      "endDate": "October 2022",
+      "description": "Conducted penetration testing and security audits using Burp Suite and Metasploit. Automated security tasks with Python and Bash, and presented complex security concepts to non-technical stakeholders."
+    },
+    {
+      "company": "Self-employed",
+      "title": "Freelance Script Writer",
+      "startDate": "January 2023",
+      "endDate": "Present",
+      "description": "Developed automation scripts for Linux systems, applied web scraping techniques with BeautifulSoup and Scrapy, and created an AI-integrated trading bot using Python and TensorFlow."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bahçeşehir University",
+      "degree": "Bachelor of Science",
+      "field": "Software Engineering (AI, Cloud Computing, Cybersecurity)",
+      "startDate": "2019",
+      "endDate": "2023"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "image": "/photos/resume/certificate-1.png"
+    },
+    {
+      "title": "TensorFlow Developer Certificate",
+      "issuer": "TensorFlow",
+      "date": "2023",
+      "image": "/photos/resume/certificate-2.png"
+    },
+    {
+      "title": "Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2023",
+      "image": "/photos/resume/certificate-3.png"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "Understanding LLMs",
+      "date": "2024-03-15",
+      "excerpt": "A deep dive into how Large Language Models work and their applications in modern AI solutions.",
+      "url": "/blog/understanding-llms"
+    }
+  ],
+  "contact": {
+    "email": "saidmustafa2812@gmail.com",
+    "github": "https://github.com/saidmustafa-said",
+    "linkedin": "https://www.linkedin.com/in/said-mustafa-said/"
+  },
+  "theme": {
+    "primary": "#121212",
+    "secondary": "#1e1e1e",
+    "accent": "#66fcf1",
+    "text": "#ffffff",
+    "textSecondary": "#a0a0a0",
+    "border": "#333333"
+  },
+  "layout": {
+    "maxWidth": "1200px",
+    "borderRadius": "0.5rem"
+  },
+  "animation": {
+    "duration": 0.3
+  },
+  "images": {
+    "logo": "/photos/img/favicon.png",
+    "certificates": [
+      "/photos/resume/certificate-1.png",
+      "/photos/resume/certificate-2.png",
+      "/photos/resume/certificate-3.png"
+    ]
+  },
+  "settings": {
+    "skills": {
+      "defaultVisibleCount": 10
+    }
+  }
+}

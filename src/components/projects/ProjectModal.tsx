@@ -95,6 +95,22 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             </div>
 
             <div className="space-y-4">
+              {/* Achievement Log Section - Show first for featured projects */}
+              {project.achievementLog && renderSection(
+                "Project Summary",
+                <div className="text-secondary leading-relaxed text-sm">
+                  <div
+                    className="prose prose-sm max-w-none"
+                    dangerouslySetInnerHTML={{
+                      __html: project.achievementLog
+                        .replace(/\*\*(.*?)\*\*/g, '<strong class="text-primary">$1</strong>')
+                        .replace(/\*\*Result\*\*:/g, '<br/><strong class="text-accent">Result</strong>:')
+                    }}
+                  />
+                </div>,
+                "bg-accent/10 p-3 sm:p-4 rounded-lg border border-accent/20"
+              )}
+
               {/* Description Section */}
               {project.description && renderSection(
                 "Overview",

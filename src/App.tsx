@@ -5,7 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Certificates from './components/Certificates'
 import { portfolioData } from './data/portfolio'
-import { config } from './config'
+
 import './App.css'
 
 const App = () => {
@@ -58,7 +58,7 @@ const App = () => {
             className="text-xl font-semibold flex items-center"
           >
             <img 
-              src={config.images.logo} 
+              src={portfolioData.images.logo}
               alt="Logo" 
               className="h-8 w-8 mr-2"
             />

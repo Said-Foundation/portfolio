@@ -177,5 +177,15 @@
 			"description": "Developed real-time dashboards for better decision-making and performance monitoring."
 		}
 	],
-	"links": []
+	"links": [],
+	"achievement_log": {
+		"title": "Enterprise AWS Connect Call Center Architecture & Analytics Platform",
+		"date": "2024-03-20",
+		"description": "Led comprehensive Amazon Connect architecture research and enterprise implementation for large-scale call center operations",
+		"key_achievements": [
+			"Architected and designed highly scalable call center infrastructure with advanced Lambda integrations, enterprise DynamoDB, S3, and sophisticated QuickSight analytics platform",
+			"Conducted strategic leadership meetings, presented comprehensive technical updates, and offered advanced strategic solutions for call flow optimization and customer experience enhancement"
+		],
+		"results": "40% improvement in call handling efficiency, real-time analytics implementation, and enhanced customer experience"
+	}
 }
