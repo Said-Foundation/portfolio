@@ -4,6 +4,7 @@
 	"description": "Automated deployment of AWS infrastructure using Terraform, including VPC, MongoDB setup, EC2 instances, and ALB configuration.",
 	"year": 2023,
 	"month": 9,
+	"duration": 2,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

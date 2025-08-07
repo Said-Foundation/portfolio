@@ -47,7 +47,11 @@
 			"Project Management",
 			"Communication"
 		],
-		"languages": ["English", "Türkçe", "Persian"]
+		"languages": {
+			"English": "Native",
+			"Türkçe": "Native",
+			"Persian": "Intermediate"
+		}
 	},
 	"experience": [
 		{
@@ -55,21 +59,34 @@
 			"title": "Cloud Machine Learning Specialist",
 			"startDate": "September 2023",
 			"endDate": "Present",
-			"description": "Architected and managed AWS infrastructure for high-performance AI applications with 99.9% uptime. Developed and deployed ML models using MLflow, fine-tuned LLMs, implemented RAG systems, built intelligent agent-based systems, and automated data processing pipelines."
+			"description": [
+				"Architected and managed AWS infrastructure for high-performance AI applications with 99.9% uptime",
+				"Developed and deployed ML models using MLflow and fine-tuned LLMs for production environments",
+				"Implemented RAG systems and built intelligent agent-based systems for enterprise clients",
+				"Automated data processing pipelines and optimized machine learning workflows"
+			]
 		},
 		{
 			"company": "BGA Bilgi Güvenliği A.Ş.",
 			"title": "Intern Penetration Tester",
 			"startDate": "August 2022",
 			"endDate": "October 2022",
-			"description": "Conducted penetration testing and security audits using Burp Suite and Metasploit. Automated security tasks with Python and Bash, and presented complex security concepts to non-technical stakeholders."
+			"description": [
+				"Conducted penetration testing and security audits using Burp Suite and Metasploit",
+				"Automated security tasks with Python and Bash scripting",
+				"Presented complex security concepts to non-technical stakeholders"
+			]
 		},
 		{
 			"company": "Self-employed",
 			"title": "Freelance Script Writer",
 			"startDate": "January 2023",
 			"endDate": "Present",
-			"description": "Developed automation scripts for Linux systems, applied web scraping techniques with BeautifulSoup and Scrapy, and created an AI-integrated trading bot using Python and TensorFlow."
+			"description": [
+				"Developed automation scripts for Linux systems and server management",
+				"Applied web scraping techniques with BeautifulSoup and Scrapy for data collection",
+				"Created an AI-integrated trading bot using Python and TensorFlow"
+			]
 		}
 	],
 	"education": [
@@ -78,7 +95,13 @@
 			"degree": "Bachelor of Science",
 			"field": "Software Engineering (AI, Cloud Computing, Cybersecurity)",
 			"startDate": "2019",
-			"endDate": "2023"
+			"endDate": "2023",
+			"description": [
+				"Specialized in Artificial Intelligence and Machine Learning algorithms",
+				"Focused on Cloud Computing architectures and distributed systems",
+				"Studied Cybersecurity principles and penetration testing methodologies",
+				"Completed capstone project on AI-powered cloud security solutions"
+			]
 		}
 	],
 	"certificates": [

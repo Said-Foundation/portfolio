@@ -4,6 +4,7 @@
 	"description": "Debugged an AWS environment involving OpenSearch, RDS, ECS, and other services to resolve deployment issues with GPU-enabled EC2 instances within ECS, enabling successful CI/CD processes.",
 	"year": 2023,
 	"month": 11,
+	"duration": 3,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

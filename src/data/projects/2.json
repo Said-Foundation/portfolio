@@ -4,6 +4,7 @@
 	"description": "Automated complex AWS infrastructure with Terraform, including VPC, CloudFront, EC2, ALB, ElastiCache, AWS MQ, and S3 for high availability and security.",
 	"year": 2023,
 	"month": 9,
+	"duration": 2,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

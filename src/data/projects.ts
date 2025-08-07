@@ -42,6 +42,7 @@ export const loadProjects = (): Project[] => {
           technologies: projectData.technologies_used.map((tech: any) => tech.name),
           year: projectData.year,
           month: projectData.month,
+          duration: projectData.duration,
           role: projectData.role,
           projectType: projectData.project_type,
           infrastructure: projectData.infrastructure,

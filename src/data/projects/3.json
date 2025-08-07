@@ -4,6 +4,7 @@
 	"description": "Automated deployment of ML infrastructure using Terraform, including Elastic Beanstalk, API Gateway, Lambda, and SageMaker for model training and real-time inference.",
 	"year": 2023,
 	"month": 10,
+	"duration": 3,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

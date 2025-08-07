@@ -4,6 +4,7 @@
 	"description": "Integrating AWS services with Terraform to create a scalable, cost-optimized environment for image generation using Stable Diffusion. The infrastructure supports AI-based image generation with automated scaling and efficient cost management.",
 	"year": 2023,
 	"month": 11,
+	"duration": 3,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

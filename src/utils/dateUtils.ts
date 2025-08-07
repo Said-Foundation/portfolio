@@ -10,6 +10,16 @@ export const formatDate = (year: number, month: number): string => {
 }
 
 /**
+ * Format duration in weeks to a readable string
+ * @param weeks The duration in weeks
+ * @returns Formatted duration string (e.g., "1 week", "3 weeks")
+ */
+export const formatDuration = (weeks?: number): string => {
+  if (!weeks) return ''
+  return weeks === 1 ? '1 week' : `${weeks} weeks`
+}
+
+/**
  * Prevent background scrolling when a modal is open
  * @param isOpen Whether the modal is open
  */

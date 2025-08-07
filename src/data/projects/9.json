@@ -4,6 +4,7 @@
 	"description": "Designed and implemented a scalable, secure call center system using AWS Connect, integrating various AWS services like AWS Lambda, AWS DynamoDB, AWS S3, AWS Kinesis Data Firehose, AWS EventBridge, AWS Simple Queue Service (SQS), and AWS QuickSight to enhance customer service and provide real-time data processing and analytics.",
 	"year": 2024,
 	"month": 2,
+	"duration": 16,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

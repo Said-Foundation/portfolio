@@ -7,7 +7,7 @@ export interface Experience {
   title: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string[];
 }
 
 export interface Education {
@@ -16,6 +16,7 @@ export interface Education {
   field: string;
   startDate: string;
   endDate: string;
+  description?: string[];
 }
 
 export interface Technology {
@@ -48,6 +49,7 @@ export interface Project {
   technologies: string[];
   year: number;
   month: number;
+  duration?: number; // Duration in weeks
   role: string;
   projectType: string;
   infrastructure?: Infrastructure[];

@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Project, Infrastructure, Link, Skill } from '../../data/portfolio'
+import { formatDate, formatDuration } from '../../utils/dateUtils'
 
 interface ProjectModalProps {
   project: Project | null
@@ -9,13 +10,6 @@ interface ProjectModalProps {
 
 const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
   if (!project) return null
-
-  const formatDate = (year: number, month: number) => {
-    return new Date(year, month - 1).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long'
-    })
-  }
 
   const hasContent = (content: any[] | undefined): boolean => {
     return Array.isArray(content) && content.length > 0
@@ -58,6 +52,12 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 <h2 className="text-xl sm:text-2xl font-bold mb-1 text-primary">{project.title}</h2>
                 <div className="flex flex-wrap items-center text-secondary gap-x-2 text-sm">
                   <span>{formatDate(project.year, project.month)}</span>
+                  {project.duration && (
+                    <>
+                      <span className="hidden sm:inline">•</span>
+                      <span>{formatDuration(project.duration)}</span>
+                    </>
+                  )}
                   {project.role && (
                     <>
                       <span className="hidden sm:inline">•</span>

@@ -4,6 +4,7 @@
 	"description": "Architected and created comprehensive enterprise EKS-based MLOps platform with sophisticated CI/CD integration, Kubeflow deployment, and advanced model orchestration for machine learning lifecycle management.",
 	"year": 2024,
 	"month": 5,
+	"duration": 2,
 	"role": "MLOps Engineer",
 	"project_type": "individual",
 	"technologies_used": [

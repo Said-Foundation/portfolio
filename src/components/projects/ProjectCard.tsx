@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Project } from '../../data/portfolio'
+import { formatDate, formatDuration } from '../../utils/dateUtils'
 
 interface ProjectCardProps {
   project: Project
@@ -8,12 +9,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, index, onOpenProject }: ProjectCardProps) => {
-  const formatDate = (year: number, month: number) => {
-    return new Date(year, month - 1).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short'
-    })
-  }
 
   return (
     <motion.div
@@ -26,7 +21,12 @@ const ProjectCard = ({ project, index, onOpenProject }: ProjectCardProps) => {
       {/* Content Section */}
       <div className="flex-grow">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-        <p className="text-secondary mb-4">{formatDate(project.year, project.month)}</p>
+        <div className="text-secondary mb-4 space-y-1">
+          <p>{formatDate(project.year, project.month)}</p>
+          {project.duration && (
+            <p className="text-sm">Duration: {formatDuration(project.duration)}</p>
+          )}
+        </div>
         <p className="text-secondary mb-4 line-clamp-3">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 3).map((tech) => (

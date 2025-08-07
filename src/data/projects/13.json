@@ -4,6 +4,7 @@
 	"description": "Successfully migrated data between two Apache Cassandra clusters, moving from an EC2-hosted environment to AWS EKS-hosted Cassandra. Focused on data consistency, minimal downtime, and schema replication.",
 	"year": 2024,
 	"month": 5,
+	"duration": 2,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

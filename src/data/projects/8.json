@@ -4,6 +4,7 @@
 	"description": "Set up AWS infrastructure using Terraform and implemented a CI/CD pipeline to manage deployments across production and staging environments. The project involved the configuration of various AWS services including AWS CodePipeline, AWS RDS, AWS VPC, AWS ECS, Redis, AWS Application Load Balancer (ALB), Bastion EC2, AWS SES, AWS Route 53, and SSL certificates.",
 	"year": 2024,
 	"month": 1,
+	"duration": 3,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

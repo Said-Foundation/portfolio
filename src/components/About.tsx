@@ -72,12 +72,13 @@ const About = () => {
             <div>
               <h4 className="text-lg font-medium mb-2">Languages</h4>
               <div className="flex flex-wrap gap-2">
-                {portfolioData.skills.languages.map((language) => (
+                {Object.entries(portfolioData.skills.languages).map(([language, level]) => (
                   <span
                     key={language}
                     className="skill-tag"
+                    title={`${language} - ${level}`}
                   >
-                    {language}
+                    {language} ({level})
                   </span>
                 ))}
               </div>
@@ -112,7 +113,14 @@ const About = () => {
                 <p className="text-sm text-secondary mb-2">
                   {exp.startDate} - {exp.endDate}
                 </p>
-                <p className="text-secondary">{exp.description}</p>
+                <ul className="text-secondary space-y-1">
+                  {exp.description.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start">
+                      <span className="text-accent mr-2 mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
@@ -143,9 +151,19 @@ const About = () => {
                     {edu.degree} in {edu.field}
                   </p>
                 </div>
-                <p className="text-sm text-secondary">
+                <p className="text-sm text-secondary mb-2">
                   {edu.startDate} - {edu.endDate}
                 </p>
+                {edu.description && (
+                  <ul className="text-secondary space-y-1">
+                    {edu.description.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start">
+                        <span className="text-accent mr-2 mt-1">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </motion.div>
             ))}
           </div>

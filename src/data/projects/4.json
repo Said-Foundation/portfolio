@@ -4,6 +4,7 @@
 	"description": "Extended an existing Terraform setup to integrate AWS Redshift with the existing infrastructure, enabling data processing and analytics capabilities.",
 	"year": 2023,
 	"month": 10,
+	"duration": 2,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

@@ -4,6 +4,7 @@
 	"description": "Developed comprehensive EKS automation platform with advanced deployment orchestration, dependency management, and zero-downtime production deployment for enterprise Kubernetes operations.",
 	"year": 2024,
 	"month": 11,
+	"duration": 2,
 	"role": "DevOps Automation Engineer",
 	"project_type": "individual",
 	"technologies_used": [

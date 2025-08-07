@@ -4,6 +4,7 @@
 	"description": "This project involved setting up an AWS infrastructure using Terraform and implementing a Continuous Integration/Continuous Deployment (CI/CD) pipeline for automated deployments. The infrastructure included AWS services such as AWS CodePipeline, AWS RDS, AWS VPC, AWS EKS, AWS S3, VPN, and Bastion EC2, with secure connectivity between AWS EKS and AWS RDS.",
 	"year": 2023,
 	"month": 12,
+	"duration": 4,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

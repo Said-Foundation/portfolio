@@ -4,8 +4,9 @@
 	"description": "Successfully migrated 400+ tables from SQL Server to RDS MySQL in 6-hour production window using AWS DMS, with complex data transformation and automated maintenance systems.",
 	"year": 2024,
 	"month": 7,
+	"duration": 8,
 	"role": "DevOps Engineer",
-	"project_type": "individual",
+	"project_type": "Team",
 	"technologies_used": [
 		{
 			"name": "AWS DMS (Database Migration Service)",

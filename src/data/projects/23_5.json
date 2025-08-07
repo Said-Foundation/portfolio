@@ -4,6 +4,7 @@
 	"description": "Developed intelligent query generation system for large-scale database operations with multi-step agentic system and context splitting capabilities to solve long-context prompt challenges.",
 	"year": 2024,
 	"month": 8,
+	"duration": 2,
 	"role": "AI/ML Engineer",
 	"project_type": "individual",
 	"technologies_used": [

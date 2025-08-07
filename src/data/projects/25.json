@@ -4,6 +4,7 @@
 	"description": "Orchestrated complex enterprise migration of 70GB WordPress site to Lightsail with advanced RDS and Redis optimization. Resolved sophisticated Lightsail-RDS connectivity issues and implemented enterprise-grade Redis caching layer with advanced performance optimization.",
 	"year": 2024,
 	"month": 9,
+	"duration": 6,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

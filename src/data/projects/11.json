@@ -4,6 +4,7 @@
 	"description": "Implemented scalable AWS infrastructure using AWS Elastic Container Service (ECS), AWS Elastic Compute Cloud (EC2), Auto Scaling Groups (ASG) with GPU instances, and Application Load Balancers (ALB) for secure and efficient traffic management. Automated deployment with Terraform.",
 	"year": 2024,
 	"month": 4,
+	"duration": 5,
 	"role": "",
 	"project_type": "individual",
 	"technologies_used": [

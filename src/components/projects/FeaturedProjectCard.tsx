@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Project } from '../../data/portfolio'
+import { formatDate, formatDuration } from '../../utils/dateUtils'
 
 interface FeaturedProjectCardProps {
   project: Project
@@ -8,12 +9,6 @@ interface FeaturedProjectCardProps {
 }
 
 const FeaturedProjectCard = ({ project, index, onOpenProject }: FeaturedProjectCardProps) => {
-  const formatDate = (year: number, month: number) => {
-    return new Date(year, month - 1).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short'
-    })
-  }
 
   return (
     <motion.div
@@ -31,6 +26,9 @@ const FeaturedProjectCard = ({ project, index, onOpenProject }: FeaturedProjectC
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-secondary text-sm">{formatDate(project.year, project.month)}</span>
+                {project.duration && (
+                  <span className="text-secondary text-sm">• {formatDuration(project.duration)}</span>
+                )}
               </div>
               <h3 className="text-xl font-bold mb-2 leading-tight">{project.title}</h3>
             </div>

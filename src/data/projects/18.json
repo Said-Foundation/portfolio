@@ -3,6 +3,7 @@
 	"project_name": "AWS Infrastructure Setup with Terraform",
 	"description": "Automated AWS infrastructure provisioning using Terraform, incorporating services like EKS, RDS, MongoDB, and Vault for a cloud-based application setup.",
 	"year": 2024,
+	"duration": 4,
 	"month": 9,
 	"role": "",
 	"project_type": "individual",

@@ -4,6 +4,7 @@
 	"description": "Developed fully automated OCR pipeline for restaurant menu processing using AWS Bedrock, processing 100+ menu images with Claude 3 Haiku and Sonnet models for structured data extraction.",
 	"year": 2024,
 	"month": 6,
+	"duration": 2,
 	"role": "AI/ML Engineer",
 	"project_type": "individual",
 	"technologies_used": [
