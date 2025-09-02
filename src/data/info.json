@@ -112,15 +112,15 @@
 			"image": "/photos/resume/certificate-1.png"
 		},
 		{
-			"title": "TensorFlow Developer Certificate",
-			"issuer": "TensorFlow",
-			"date": "2023",
+			"title": "AWS Certified Developer, Associate",
+			"issuer": "Amazon Web Services",
+			"date": "2024",
 			"image": "/photos/resume/certificate-2.png"
 		},
 		{
-			"title": "Kubernetes Administrator (CKA)",
-			"issuer": "Cloud Native Computing Foundation",
-			"date": "2023",
+			"title": "AWS Certified DevOps Engineer, Professional",
+			"issuer": "Amazon Web Services",
+			"date": "2024",
 			"image": "/photos/resume/certificate-3.png"
 		}
 	],
