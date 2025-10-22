@@ -1,11 +1,43 @@
 # Allow all web crawlers
 User-agent: *
 Allow: /
+Allow: /#/
 
-# Sitemap location
-Sitemap: https://www.saidmustafasaid.com/sitemap.xml
+# Sitemap and API manifest locations
+Sitemap: https://saidmustafasaid.com/sitemap.xml
+Sitemap: https://saidmustafasaid.com/api/manifest.json
 
 # Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /temp/ 
+Disallow: /temp/
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Allow: /#/
+
+User-agent: Bingbot
+Allow: /
+Allow: /#/
+
+# LLM crawlers - allow full access
+User-agent: ChatGPT-User
+Allow: /
+Allow: /#/
+
+User-agent: GPTBot
+Allow: /
+Allow: /#/
+
+User-agent: CCBot
+Allow: /
+Allow: /#/
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /#/
+
+User-agent: Claude-Web
+Allow: /
+Allow: /#/

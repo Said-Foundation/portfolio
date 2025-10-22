@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Project, Infrastructure, Link, Skill } from '../../data/portfolio'
 import { formatDate, formatDuration } from '../../utils/dateUtils'
+import { generateProjectSchema, injectSchema } from '../../utils/schemaGenerator'
 
 interface ProjectModalProps {
   project: Project | null
@@ -10,6 +12,14 @@ interface ProjectModalProps {
 
 const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
   if (!project) return null
+
+  // Inject schema markup when modal opens
+  useEffect(() => {
+    if (isOpen && project) {
+      const schema = generateProjectSchema(project)
+      injectSchema(schema, `project-schema-${project.id}`)
+    }
+  }, [isOpen, project])
 
   const hasContent = (content: any[] | undefined): boolean => {
     return Array.isArray(content) && content.length > 0

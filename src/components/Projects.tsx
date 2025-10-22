@@ -28,14 +28,6 @@ const Projects = () => {
     <div className="py-8">
       {/* Featured Projects Section */}
       <div className="mb-12">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-2xl font-bold mb-8 text-center"
-        >
-          Featured Projects
-        </motion.h3>
         <div className="space-y-8">
           {featuredProjects.map((project, index) => (
             <FeaturedProjectCard

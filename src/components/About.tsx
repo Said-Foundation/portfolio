@@ -1,16 +1,8 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { portfolioData } from '../data/portfolio'
 
 
 const About = () => {
-  const [showAllSkills, setShowAllSkills] = useState(false);
-  
-  const visibleSkills = showAllSkills
-    ? portfolioData.skills.technical
-    : portfolioData.skills.technical.slice(0, portfolioData.settings.skills.defaultVisibleCount);
-
-  const hasMoreSkills = portfolioData.skills.technical.length > portfolioData.settings.skills.defaultVisibleCount;
 
   return (
     <div className="grid md:grid-cols-2 gap-12">
@@ -33,56 +25,55 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          <h3 className="text-2xl font-bold mb-4">Skills</h3>
+          <h3 className="text-2xl font-bold mb-6">Skills</h3>
           <div className="space-y-6">
-            <div>
-              <h4 className="text-lg font-medium mb-2">Technical</h4>
-              <div className="flex flex-wrap gap-2">
-                {visibleSkills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="skill-tag"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              {hasMoreSkills && (
-                <button 
-                  onClick={() => setShowAllSkills(!showAllSkills)}
-                  className="mt-2 text-accent hover:underline text-sm"
-                >
-                  {showAllSkills ? 'Show Less' : 'Show More'}
-                </button>
-              )}
-            </div>
-            <div>
-              <h4 className="text-lg font-medium mb-2">Soft Skills</h4>
-              <div className="flex flex-wrap gap-2">
-                {portfolioData.skills.soft.map((skill) => (
-                  <span
-                    key={skill}
-                    className="skill-tag"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-medium mb-2">Languages</h4>
+            {/* Skill Categories */}
+            {Object.entries(portfolioData.skills.categories).map(([category, skills], index) => (
+              <motion.div
+                key={category}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <h4 className="text-sm font-semibold text-accent mb-3 uppercase tracking-wide">{category}</h4>
+                <div className="flex flex-wrap gap-2">
+                  {skills.split(', ').map((skill) => (
+                    <motion.span
+                      key={skill}
+                      whileHover={{ scale: 1.08, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="px-3 py-1.5 bg-card border border-border rounded-full text-xs font-medium text-secondary hover:text-accent hover:border-accent transition-all duration-200 cursor-default"
+                    >
+                      {skill}
+                    </motion.span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+
+            {/* Languages */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+            >
+              <h4 className="text-sm font-semibold text-accent mb-3 uppercase tracking-wide">Languages</h4>
               <div className="flex flex-wrap gap-2">
                 {Object.entries(portfolioData.skills.languages).map(([language, level]) => (
-                  <span
+                  <motion.span
                     key={language}
-                    className="skill-tag"
+                    whileHover={{ scale: 1.08, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-3 py-1.5 bg-card border border-border rounded-full text-xs font-medium text-secondary hover:text-accent hover:border-accent transition-all duration-200 cursor-default"
                     title={`${language} - ${level}`}
                   >
-                    {language} ({level})
-                  </span>
+                    {language}
+                  </motion.span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -1,56 +1,23 @@
 {
 	"personal": {
-		"name": "Said Mustafa",
-		"title": "AI & ML Specialist | DevOps Engineer",
-		"bio": "AI and Cloud ML Specialist with 2+ years of experience developing secure, scalable cloud solutions. Skilled in optimizing machine learning workflows and deploying models efficiently on cloud platforms."
+		"name": "Said Mustafa Said",
+		"location": "Berlin, Germany",
+		"title": "AI/ML Engineer | LLMs & MLOps Specialist",
+		"bio": "I build intelligent systems that actually work. Specializing in LLMs, RAG architectures, and production ML infrastructure. I've shipped 30+ AI projects, fine-tuned models at scale, and helped teams automate workflows they thought were impossible. When I'm not architecting ML pipelines, I'm exploring new ways to make AI more practical and accessible."
 	},
 	"skills": {
-		"technical": [
-			"AWS",
-			"Kubernetes",
-			"Terraform",
-			"EC2",
-			"S3",
-			"Lambda",
-			"CloudWatch",
-			"RDS",
-			"ElastiCache",
-			"CloudFront",
-			"SageMaker",
-			"TensorFlow",
-			"PyTorch",
-			"MLflow",
-			"Large Language Models (LLMs)",
-			"Retrieval-Augmented Generation (RAG)",
-			"Natural Language Processing",
-			"Computer Vision",
-			"Deep Learning",
-			"Model Optimization",
-			"Hyperparameter Tuning",
-			"CI/CD",
-			"Docker",
-			"Bash",
-			"Git",
-			"GitHub Actions",
-			"Jenkins",
-			"Pandas",
-			"NumPy",
-			"Scikit-learn",
-			"Matplotlib",
-			"Seaborn",
-			"SQL"
-		],
-		"soft": [
-			"Problem Solving",
-			"Team Leadership",
-			"Technical Writing",
-			"Project Management",
-			"Communication"
-		],
+		"categories": {
+			"AI/ML": "LLM Fine-Tuning, Multi-Agent RAG, LangChain, LangGraph, Hugging Face, TensorFlow, PyTorch, Bedrock, MLflow, Weights & Biases, Vector Databases, Retrieval-Augmented Generation, Process Automation",
+			"Cloud & DevOps": "AWS (SageMaker, Lambda, EKS, Step Functions, EC2, S3), GCP, Azure, Kubernetes, Terraform, Docker, CI/CD, CloudFormation, Monitoring (CloudWatch, Grafana, Prometheus)",
+			"Data & Systems": "Vector Databases (FAISS, Pinecone, LanceDB), RDS, DynamoDB, SQL, Cassandra, Redis, ETL pipelines, Data Modeling, Data Transformation",
+			"Python & Backend": "Python, pandas, SQLAlchemy, FastAPI, TypeScript, Java, Bash",
+			"Frontend & Visualization": "React.js, Streamlit, Gradio"
+		},
 		"languages": {
 			"English": "Native",
-			"Türkçe": "Native",
-			"Persian": "Intermediate"
+			"Persian": "Native",
+			"Turkish": "Native",
+			"German": "Intermediate"
 		}
 	},
 	"experience": [
@@ -58,12 +25,14 @@
 			"company": "Skyloop Cloud",
 			"title": "Cloud Machine Learning Specialist",
 			"startDate": "September 2023",
-			"endDate": "Present",
+			"endDate": "June 2025",
+			"location": "Istanbul, Turkey",
 			"description": [
-				"Architected and managed AWS infrastructure for high-performance AI applications with 99.9% uptime",
-				"Developed and deployed ML models using MLflow and fine-tuned LLMs for production environments",
-				"Implemented RAG systems and built intelligent agent-based systems for enterprise clients",
-				"Automated data processing pipelines and optimized machine learning workflows"
+				"Delivered 30+ AI/ML and cloud projects covering ML infrastructure, big data ETL, and intelligent automation, leveraging AWS, Terraform, EKS, and SageMaker.",
+				"Architected and deployed 25+ AI/ML models (LLMs, RAG, OCR, custom NLP) with advanced MLOps pipelines, achieving up to 90% automation and 70% faster deployment.",
+				"Built multi-agent RAG platforms (customer support, query generation, document automation) using vector databases (FAISS, Pinecone) and LangChain for retrieval-augmented workflows, implementing automated orchestration pipelines for enterprise processes.",
+				"Partnered with executives (CTOs, boards) to design AI strategies, including Amazon Q Pro rollout for 40+ developers, boosting coding productivity by 60%.",
+				"Led cloud migrations and optimizations (Cassandra → RDS, SQL Server → MySQL, WordPress CDN redesign), delivering zero downtime and 40–60% cost savings."
 			]
 		},
 		{
@@ -71,37 +40,30 @@
 			"title": "Intern Penetration Tester",
 			"startDate": "August 2022",
 			"endDate": "October 2022",
+			"location": "Istanbul, Turkey",
 			"description": [
-				"Conducted penetration testing and security audits using Burp Suite and Metasploit",
-				"Automated security tasks with Python and Bash scripting",
-				"Presented complex security concepts to non-technical stakeholders"
-			]
-		},
-		{
-			"company": "Self-employed",
-			"title": "Freelance Script Writer",
-			"startDate": "January 2023",
-			"endDate": "Present",
-			"description": [
-				"Developed automation scripts for Linux systems and server management",
-				"Applied web scraping techniques with BeautifulSoup and Scrapy for data collection",
-				"Created an AI-integrated trading bot using Python and TensorFlow"
+				"Performed penetration testing & audits using Burp Suite & Metasploit; identified and remediated critical vulnerabilities.",
+				"Automated recurring security checks with Python & Bash, increasing compliance efficiency.",
+				"Communicated security findings to non-technical stakeholders, ensuring adoption of best practices."
 			]
 		}
 	],
 	"education": [
 		{
+			"institution": "IU Internationale Hochschule",
+			"degree": "M.Sc.",
+			"field": "Artificial Intelligence",
+			"startDate": "2024",
+			"endDate": "2027",
+			"location": "Berlin, Germany"
+		},
+		{
 			"institution": "Bahçeşehir University",
 			"degree": "Bachelor of Science",
-			"field": "Software Engineering (AI, Cloud Computing, Cybersecurity)",
+			"field": "Software Engineering",
 			"startDate": "2019",
 			"endDate": "2023",
-			"description": [
-				"Specialized in Artificial Intelligence and Machine Learning algorithms",
-				"Focused on Cloud Computing architectures and distributed systems",
-				"Studied Cybersecurity principles and penetration testing methodologies",
-				"Completed capstone project on AI-powered cloud security solutions"
-			]
+			"location": "Istanbul, Turkey"
 		}
 	],
 	"certificates": [
@@ -134,6 +96,8 @@
 	],
 	"contact": {
 		"email": "saidmustafa2812@gmail.com",
+		"phone": "+90 (530) 856 76 40",
+		"location": "Berlin, Germany",
 		"github": "https://github.com/saidmustafa-said",
 		"linkedin": "https://www.linkedin.com/in/said-mustafa-said/"
 	},

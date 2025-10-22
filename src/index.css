@@ -54,14 +54,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dark theme color scheme */
+/* Dark theme color scheme - Lighter & More Vibrant */
 :root {
-  --background: #1a1a1a;
-  --card: #242424;
+  --background: #1a1f2e;
+  --card: #242d3d;
   --primary: #ffffff;
-  --secondary: #b0b0b0;
-  --accent: #7af0e8;
-  --border: #404040;
+  --secondary: #b8c5d6;
+  --accent: #00d9ff;
+  --accent-secondary: #00b8d4;
+  --border: #3a4555;
 }
 
 body {

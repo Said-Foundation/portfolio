@@ -57,16 +57,16 @@ const App = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-xl font-semibold flex items-center"
           >
-            <img 
+            <img
               src={portfolioData.images.logo}
-              alt="Logo" 
+              alt="Logo"
               className="h-8 w-8 mr-2"
             />
             {portfolioData.name}
           </motion.div>
-          
+
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {navItems.map((item) => (
               <motion.button
                 key={item.id}
@@ -119,8 +119,28 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="section flex items-center justify-center pt-24">
-        <div className="container text-center">
+      <section id="home" className="section flex items-center justify-center pt-24 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <motion.div
+            animate={{
+              y: [0, -20, 0],
+              opacity: [0.1, 0.2, 0.1]
+            }}
+            transition={{ duration: 8, repeat: Infinity }}
+            className="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl"
+          />
+          <motion.div
+            animate={{
+              y: [0, 20, 0],
+              opacity: [0.1, 0.15, 0.1]
+            }}
+            transition={{ duration: 10, repeat: Infinity, delay: 1 }}
+            className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"
+          />
+        </div>
+
+        <div className="container text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -129,15 +149,26 @@ const App = () => {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-4xl md:text-6xl font-bold mb-2"
             >
-              Hi, I'm {portfolioData.name}
+              Hi, I'm <span className="gradient-text">{portfolioData.name}</span>
             </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-secondary mb-4 flex items-center justify-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+              {portfolioData.location}
+            </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-accent mb-6"
+              className="text-xl md:text-2xl text-accent mb-6 font-semibold"
             >
               {portfolioData.title}
             </motion.h2>
@@ -145,7 +176,7 @@ const App = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg text-secondary mb-8"
+              className="text-lg text-secondary mb-8 leading-relaxed max-w-2xl mx-auto"
             >
               {portfolioData.bio}
             </motion.p>
@@ -155,18 +186,22 @@ const App = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap justify-center gap-4"
             >
-              <a 
-                href="#contact" 
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="btn btn-primary"
               >
                 Get in Touch
-              </a>
-              <a 
-                href="#projects" 
+              </motion.a>
+              <motion.a
+                href="#projects"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="btn btn-secondary"
               >
                 View Projects
-              </a>
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
@@ -246,9 +281,11 @@ const App = () => {
       </section>
       
       {/* Footer */}
-      <footer className="py-8 border-t border-border">
-        <div className="container text-center text-secondary">
-          <p>© {new Date().getFullYear()} {portfolioData.name}. All rights reserved.</p>
+      <footer className="py-12 border-t border-border bg-card/50">
+        <div className="container">
+          <div className="text-center text-secondary text-sm">
+            <p>© {new Date().getFullYear()} {portfolioData.name}. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
