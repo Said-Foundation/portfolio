@@ -3,7 +3,7 @@
 		"name": "Said Mustafa Said",
 		"location": "Berlin, Germany",
 		"title": "AI/ML Engineer | LLMs & MLOps Specialist",
-		"bio": "I build intelligent systems that actually work. Specializing in LLMs, RAG architectures, and production ML infrastructure. I've shipped 30+ AI projects, fine-tuned models at scale, and helped teams automate workflows they thought were impossible. When I'm not architecting ML pipelines, I'm exploring new ways to make AI more practical and accessible."
+		"bio": "AI/ML Engineer specializing in LLMs, MLOps, and large-scale AI infrastructure. Over 3 years of experience architecting end-to-end ML pipelines, fine-tuning LLMs, and building multi-agent RAG systems deployed on enterprise cloud platforms. Proven track record of driving 90% workflow automation, 70% deployment acceleration, and up to 60% cost savings through AI-driven solutions and scalable infrastructure. Skilled at bridging technical depth with executive-level communication."
 	},
 	"skills": {
 		"categories": {
@@ -16,8 +16,7 @@
 		"languages": {
 			"English": "Native",
 			"Persian": "Native",
-			"Turkish": "Native",
-			"German": "Intermediate"
+			"Turkish": "Native"
 		}
 	},
 	"experience": [
@@ -54,7 +53,7 @@
 			"degree": "M.Sc.",
 			"field": "Artificial Intelligence",
 			"startDate": "2024",
-			"endDate": "2027",
+			"endDate": "Present",
 			"location": "Berlin, Germany"
 		},
 		{
@@ -96,7 +95,6 @@
 	],
 	"contact": {
 		"email": "saidmustafa2812@gmail.com",
-		"phone": "+90 (530) 856 76 40",
 		"location": "Berlin, Germany",
 		"github": "https://github.com/saidmustafa-said",
 		"linkedin": "https://www.linkedin.com/in/said-mustafa-said/"
