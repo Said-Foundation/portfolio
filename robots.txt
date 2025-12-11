@@ -4,8 +4,8 @@ Allow: /
 Allow: /#/
 
 # Sitemap and API manifest locations
-Sitemap: https://saidmustafasaid.com/sitemap.xml
-Sitemap: https://saidmustafasaid.com/api/manifest.json
+Sitemap: https://portfolio.saidmustafasaid.com/sitemap.xml
+Sitemap: https://portfolio.saidmustafasaid.com/api/manifest.json
 
 # Disallow admin and private areas
 Disallow: /admin/
