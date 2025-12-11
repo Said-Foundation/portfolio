@@ -1,0 +1,178 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Said Mustafa Said - AI/ML Engineer Portfolio",
+  "url": "https://saidmustafa.dev",
+  "description": "Portfolio of Said Mustafa Said, an AI/ML Engineer specializing in LLMs, RAG architectures, and production ML infrastructure. 30+ AI projects shipped, fine-tuned models at scale, and enterprise cloud deployments.",
+  "author": {
+    "@type": "Person",
+    "name": "Said Mustafa Said",
+    "url": "https://saidmustafa.dev",
+    "email": "saidmustafa2812@gmail.com",
+    "jobTitle": "AI/ML Engineer | LLMs & MLOps Specialist",
+    "location": "Berlin, Germany",
+    "sameAs": [
+      "https://github.com/saidmustafa",
+      "https://linkedin.com/in/saidmustafa"
+    ]
+  },
+  "sections": [
+    {
+      "name": "Home",
+      "url": "/#/",
+      "description": "Portfolio homepage with introduction"
+    },
+    {
+      "name": "About",
+      "url": "/#/about",
+      "description": "About me, skills, experience, and education"
+    },
+    {
+      "name": "Projects",
+      "url": "/#/projects",
+      "description": "Featured and other projects showcasing AI/ML expertise"
+    },
+    {
+      "name": "Certificates",
+      "url": "/#/certificates",
+      "description": "Professional certifications and credentials"
+    },
+    {
+      "name": "Contact",
+      "url": "/#/contact",
+      "description": "Contact information and ways to connect"
+    }
+  ],
+  "technologies": [
+    "LLM Fine-Tuning",
+    "Multi-Agent RAG",
+    "LangChain",
+    "LangGraph",
+    "Hugging Face",
+    "TensorFlow",
+    "PyTorch",
+    "AWS",
+    "GCP",
+    "Azure",
+    "Kubernetes",
+    "Docker",
+    "Python",
+    "TypeScript",
+    "React.js"
+  ],
+  "skills": {
+    "AI/ML": [
+      "LLM Fine-Tuning",
+      "Multi-Agent RAG",
+      "LangChain",
+      "LangGraph",
+      "Hugging Face",
+      "TensorFlow",
+      "PyTorch",
+      "Bedrock",
+      "MLflow",
+      "Weights & Biases",
+      "Vector Databases",
+      "RAG",
+      "Process Automation"
+    ],
+    "Cloud & DevOps": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Kubernetes",
+      "Terraform",
+      "Docker",
+      "CI/CD",
+      "CloudFormation",
+      "Monitoring"
+    ],
+    "Data & Systems": [
+      "Vector Databases",
+      "RDS",
+      "DynamoDB",
+      "SQL",
+      "Cassandra",
+      "Redis",
+      "ETL pipelines",
+      "Data Modeling",
+      "Data Transformation"
+    ],
+    "Python & Backend": [
+      "Python",
+      "pandas",
+      "SQLAlchemy",
+      "FastAPI",
+      "TypeScript",
+      "Java",
+      "Bash"
+    ],
+    "Frontend & Visualization": [
+      "React.js",
+      "Streamlit",
+      "Gradio"
+    ]
+  },
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Native"
+    },
+    {
+      "name": "Persian",
+      "proficiency": "Native"
+    },
+    {
+      "name": "Turkish",
+      "proficiency": "Native"
+    },
+    {
+      "name": "German",
+      "proficiency": "Intermediate"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Skyloop Cloud",
+      "title": "AI/ML Engineer",
+      "startDate": "2023-09",
+      "endDate": "2025-06",
+      "description": "Architected and deployed 30+ AI projects, fine-tuned 25+ models at scale, built RAG platforms for enterprise clients, managed executive partnerships, and led cloud migrations"
+    },
+    {
+      "company": "BGA Bilgi Güvenliği",
+      "title": "Security Analyst",
+      "startDate": "2022-08",
+      "endDate": "2022-10",
+      "description": "Conducted penetration testing and security assessments"
+    }
+  ],
+  "education": [
+    {
+      "institution": "IU Internationale Hochschule",
+      "degree": "M.Sc.",
+      "field": "Artificial Intelligence",
+      "startDate": "2024",
+      "endDate": "2027",
+      "location": "Berlin, Germany"
+    },
+    {
+      "institution": "Bahçeşehir University",
+      "degree": "B.S.",
+      "field": "Software Engineering",
+      "startDate": "2019",
+      "endDate": "2023",
+      "location": "Istanbul, Turkey"
+    }
+  ],
+  "contact": {
+    "email": "saidmustafa2812@gmail.com",
+    "phone": "+90 (530) 856 76 40",
+    "location": "Berlin, Germany",
+    "github": "https://github.com/saidmustafa",
+    "linkedin": "https://linkedin.com/in/saidmustafa"
+  },
+  "lastUpdated": "2025-10-23",
+  "version": "1.0"
+}
+
