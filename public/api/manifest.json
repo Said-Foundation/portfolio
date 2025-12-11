@@ -2,12 +2,12 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Said Mustafa Said - AI/ML Engineer Portfolio",
-  "url": "https://saidmustafa.dev",
+  "url": "https://portfolio.saidmustafasaid.com",
   "description": "Portfolio of Said Mustafa Said, an AI/ML Engineer specializing in LLMs, RAG architectures, and production ML infrastructure. 30+ AI projects shipped, fine-tuned models at scale, and enterprise cloud deployments.",
   "author": {
     "@type": "Person",
     "name": "Said Mustafa Said",
-    "url": "https://saidmustafa.dev",
+    "url": "https://portfolio.saidmustafasaid.com",
     "email": "saidmustafa2812@gmail.com",
     "jobTitle": "AI/ML Engineer | LLMs & MLOps Specialist",
     "location": "Berlin, Germany",
@@ -175,4 +175,3 @@
   "lastUpdated": "2025-10-23",
   "version": "1.0"
 }
-
