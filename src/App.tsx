@@ -4,13 +4,14 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Certificates from './components/Certificates'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 import { portfolioData } from './data/portfolio'
 
 import './App.css'
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home')
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,91 +33,15 @@ const App = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'certificates', label: 'Certificates' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' },
-  ]
-
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',
     })
-    setIsMenuOpen(false)
   }
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="text-xl font-semibold flex items-center"
-          >
-            <img
-              src={portfolioData.images.logo}
-              alt="Logo"
-              className="h-8 w-8 mr-2"
-            />
-            {portfolioData.name}
-          </motion.div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 items-center">
-            {navItems.map((item) => (
-              <motion.button
-                key={item.id}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className={`nav-link ${
-                  activeSection === item.id ? 'text-accent font-semibold' : ''
-                }`}
-                onClick={() => scrollToSection(item.id)}
-              >
-                {item.label}
-              </motion.button>
-            ))}
-          </div>
-          
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-primary hover:text-accent transition-colors"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
-        
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-card border-b border-border">
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  className={`nav-link text-left ${
-                    activeSection === item.id ? 'text-accent font-semibold' : ''
-                  }`}
-                  onClick={() => scrollToSection(item.id)}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-      </nav>
+      <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
 
       {/* Hero Section */}
       <section id="home" className="section flex items-center justify-center pt-24 relative overflow-hidden">
@@ -218,7 +143,7 @@ const App = () => {
           >
             <h2 className="text-3xl font-bold mb-4">Certifications</h2>
             <p className="text-secondary max-w-2xl mx-auto">
-              Professional certifications that demonstrate my expertise in cloud computing, 
+              Professional certifications that demonstrate my expertise in cloud computing,
               machine learning, and DevOps practices.
             </p>
           </motion.div>
@@ -279,15 +204,8 @@ const App = () => {
           <Contact />
         </div>
       </section>
-      
-      {/* Footer */}
-      <footer className="py-12 border-t border-border bg-card/50">
-        <div className="container">
-          <div className="text-center text-secondary text-sm">
-            <p>© {new Date().getFullYear()} {portfolioData.name}. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+
+      <Footer />
     </div>
   )
 }

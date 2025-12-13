@@ -1,18 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Clean Design System - Following rules.txt principles */
+:root {
+  /* 8-point spacing scale */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+
+  /* Consistent border radius - single value */
+  --radius: 8px;
+
+  /* Black/Blue color scheme - no gradients */
+  --background: #000000;
+  --card: #0a0a0a;
+  --primary: #ffffff;
+  --secondary: #a1a1a1;
+  --accent: #00d9ff;
+  --border: #1a1a1a;
+  --hover: rgba(0, 217, 255, 0.1);
+
+  /* Typography weights */
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
 @layer base {
   body {
-    @apply bg-background text-primary min-h-screen font-sans;
+    @apply bg-background text-primary min-h-screen;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 @layer components {
   .section {
-    @apply min-h-screen w-full px-4 py-16 md:px-8;
+    @apply w-full px-6 py-24;
   }
   
   .container {
@@ -20,61 +55,41 @@
   }
   
   .nav-link {
-    @apply text-secondary hover:text-primary transition-colors duration-200 font-medium;
+    @apply text-secondary hover:text-primary transition-colors duration-200 font-medium text-sm;
   }
   
   .card {
-    @apply border border-border rounded-lg p-6 hover:border-primary transition-colors duration-200 bg-card;
+    @apply bg-card border border-border p-6 hover:border-accent transition-all duration-200;
+    border-radius: var(--radius);
   }
 
   .btn {
-    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 flex items-center justify-center;
+    @apply px-4 py-2 font-medium transition-all duration-200 inline-flex items-center justify-center gap-2;
+    border-radius: var(--radius);
   }
 
   .btn-primary {
-    @apply bg-accent text-background hover:bg-opacity-90;
+    @apply border border-accent text-accent hover:bg-accent hover:text-black;
   }
 
   .btn-secondary {
-    @apply bg-border text-primary hover:bg-opacity-80 hover:border-primary hover:border;
+    @apply border border-border text-primary hover:border-accent;
   }
 
   .skill-tag {
-    @apply px-3 py-1 bg-border rounded-full text-sm text-secondary;
+    @apply px-3 py-1 bg-border text-sm text-secondary;
+    border-radius: var(--radius);
   }
-}
 
-:root {
-  font-family: 'Inter', system-ui, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Dark theme color scheme - Lighter & More Vibrant */
-:root {
-  --background: #1a1f2e;
-  --card: #242d3d;
-  --primary: #ffffff;
-  --secondary: #b8c5d6;
-  --accent: #00d9ff;
-  --accent-secondary: #00b8d4;
-  --border: #3a4555;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  .gradient-text {
+    @apply text-accent;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section {
-    @apply py-12;
+    @apply py-16;
   }
   
   h1 {
@@ -88,23 +103,5 @@ body {
   h3 {
     @apply text-xl;
   }
-  
-  .btn {
-    @apply px-3 py-2 text-sm;
-  }
 }
 
-/* Fix for uneven button styling */
-.btn-primary, .btn-secondary {
-  @apply min-w-[120px] text-center;
-}
-
-/* Improve card styling */
-.card {
-  @apply shadow-sm hover:shadow-md transition-all duration-300;
-}
-
-/* Improve modal styling */
-.modal-content {
-  @apply shadow-xl border border-border;
-}
